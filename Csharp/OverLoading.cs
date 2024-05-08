@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp
+namespace ConsoleApp4
 {
     public class Program
     {
@@ -17,11 +17,11 @@ namespace ConsoleApp
         static int Addnumbers(int a, int b, int c)
         {
             return a + b + c;
-        }  
+        }
 
 
 
-        public static void Main(string[] args)
+        public static void Main4(string[] args)
         {
             int sum1 = Addnumbers(10, 20);
             float sum2 = Addnumbers(10.5f, 21.5f);

@@ -1,22 +1,22 @@
 using System;
-using System.Collections.Generic; // Dictionary »ç¿ë ½Ã Ãß°¡
+using System.Collections.Generic; // Dictionary ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½
 
-namespace ConsoleApp
+namespace ConsoleApp2
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main2(string[] args)
         {
             /*********************** [ List ] ************************/
-            List<int> numbers = new List<int>();   // ºó ¸®½ºÆ® »ý¼º
+            List<int> numbers = new List<int>();   // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
             numbers.Add(1);
             numbers.Add(2);
             numbers.Add(3);
             numbers.Remove(2);
 
-            for (int i = 0; i<numbers.Count; i++)   // Count ´ë¹®ÀÚ·Î ½á¾ßÇÔ
+            for (int i = 0; i < numbers.Count; i++)   // Count ï¿½ë¹®ï¿½Ú·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
             {
-                Console.WriteLine(numbers[i]);              
+                Console.WriteLine(numbers[i]);
             }
 
             foreach (int i in numbers)

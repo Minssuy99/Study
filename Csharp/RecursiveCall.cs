@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp
+namespace ConsoleApp5
 {
     public class Program
     {
@@ -13,10 +13,10 @@ namespace ConsoleApp
             else
             {
                 Console.WriteLine(n);
-                CountDown(n -1);
+                CountDown(n - 1);
             }
         }
-        public static void Main(string[] args)
+        public static void Main5(string[] args)
         {
             CountDown(5);
         }

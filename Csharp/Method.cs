@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp
+namespace ConsoleApp3
 {
     public class Program
     {
@@ -28,13 +28,13 @@ namespace ConsoleApp
             return a + b;
         }
 
-        public static void Main(string[] args)
+        public static void Main3(string[] args)
         {
             PrintLine();
             PrintLine2(20);
             int result = Add(10, 20);
             Console.WriteLine(result);
         }
-        
+
     }
 }

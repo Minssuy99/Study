@@ -1,10 +1,10 @@
 using System;
 
-namespace ConsoleApp
+namespace ConsoleApp1
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             int[] array1 = new int[5]; // 크기가 5인 int형 배열 선언
             string[] array2 = new string[3]; // 크기가 3인 int형 배열 선언
