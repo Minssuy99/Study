@@ -1,2 +1,5 @@
 *.exe
 *.json
+Program.cs
+Study.csproj
+/obj
