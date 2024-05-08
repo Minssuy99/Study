@@ -2,5 +2,6 @@
 *.json
 Program.cs
 Study.csproj
+Study.sln
 /obj
 /bin
