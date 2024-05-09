@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace ConsoleApp
+namespace ConsoleAppGeneric
 {
     public class Program
     {
@@ -29,7 +29,7 @@ namespace ConsoleApp
 
 
 
-        public static void Main(string[] args)
+        public static void MainGeneric(string[] args)
         {
             Stack<int> intStack = new Stack<int>();
             intStack.Push(1);
