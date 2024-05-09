@@ -50,7 +50,7 @@ namespace ConsoleApp7
 
     public class Program
     {
-        public static void Main(string[] args)
+        public static void MainInheritance(string[] args)
         {
             Dog Lofi = new Dog();
             Lofi.Name = "Lofi";
