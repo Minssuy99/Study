@@ -38,6 +38,12 @@ namespace ConsoleApp6
     {
         public string Name { get; set; }    // 프로퍼티
         public int Age { get; set; }    // set 은 값을 할당할 때, get 은 값을 반환할 때
+
+        public OtherPerson()
+        {
+            Name = "Null";
+            Age = 0;
+        }
     }
 
 
