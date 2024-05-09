@@ -6,8 +6,8 @@ namespace ConsoleApp1
     {
         public static void Main1(string[] args)
         {
-            int[] array1 = new int[5]; // Å©±â°¡ 5ÀÎ intÇü ¹è¿­ ¼±¾ğ
-            string[] array2 = new string[3]; // Å©±â°¡ 3ÀÎ intÇü ¹è¿­ ¼±¾ğ
+            int[] array1 = new int[5]; // í¬ê¸°ê°€ 5ì¸ intí˜• ë°°ì—´ ì„ ì–¸
+            string[] array2 = new string[3]; // í¬ê¸°ê°€ 3ì¸ intí˜• ë°°ì—´ ì„ ì–¸
             int num = 0;
 
             array1[0] = 1;
@@ -33,18 +33,18 @@ namespace ConsoleApp1
 
             /*********************************************************************************/
 
-            // ´É·ÂÄ¡¸¦ ·£´ıÀ¸·Î »ı¼º
+            // ëŠ¥ë ¥ì¹˜ë¥¼ ëœë¤ìœ¼ë¡œ ìƒì„±
             Random rand = new Random();
-            int[] playerStats = new int[4]; // Å©±â°¡ 4ÀÎ intÇü ¹è¿­ ¼±¾ğ
+            int[] playerStats = new int[4]; // í¬ê¸°ê°€ 4ì¸ intí˜• ë°°ì—´ ì„ ì–¸
             for (int i = 0; i < playerStats.Length; i++)
             {
-                playerStats[i] = rand.Next(1, 11);  // 1ÀÌ»ó 10ÀÌÇÏÀÇ ¼ıÀÚ¸¦ ·£´ıÀ¸·Î ÇÒ´ç (11Àº Æ÷ÇÔx)
+                playerStats[i] = rand.Next(1, 11);  // 1ì´ìƒ 10ì´í•˜ì˜ ìˆ«ìë¥¼ ëœë¤ìœ¼ë¡œ í• ë‹¹ (11ì€ í¬í•¨x)
             }
 
-            Console.WriteLine("ÇÃ·¹ÀÌ¾îÀÇ °ø°İ·Â: " + playerStats[0]);
-            Console.WriteLine("ÇÃ·¹ÀÌ¾îÀÇ ¹æ¾î·Â: " + playerStats[1]);
-            Console.WriteLine("ÇÃ·¹ÀÌ¾îÀÇ Ã¼  ·Â: " + playerStats[2]);
-            Console.WriteLine("ÇÃ·¹ÀÌ¾îÀÇ ½ºÇÇµå: " + playerStats[3]);
+            Console.WriteLine("í”Œë ˆì´ì–´ì˜ ê³µê²©ë ¥: " + playerStats[0]);
+            Console.WriteLine("í”Œë ˆì´ì–´ì˜ ë°©ì–´ë ¥: " + playerStats[1]);
+            Console.WriteLine("í”Œë ˆì´ì–´ì˜ ì²´  ë ¥: " + playerStats[2]);
+            Console.WriteLine("í”Œë ˆì´ì–´ì˜ ìŠ¤í”¼ë“œ: " + playerStats[3]);
 
             /*********************************************************************************/
 
@@ -52,8 +52,8 @@ namespace ConsoleApp1
 
             for (int i = 0; i < scores.Length; i++)
             {
-                Console.Write("ÇĞ»ı " + (i + 1) + " ÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
-                scores[i] = int.Parse(Console.ReadLine()); // ÀÔ·ÂÀ» int ÇüÀ¸·Î º¯È¯ ÈÄ ¹è¿­ i¿¡ ÇÒ´ç
+                Console.Write("í•™ìƒ " + (i + 1) + " ì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš” : ");
+                scores[i] = int.Parse(Console.ReadLine()); // ì…ë ¥ì„ int í˜•ìœ¼ë¡œ ë³€í™˜ í›„ ë°°ì—´ iì— í• ë‹¹
             }
 
             int sum = 0;
@@ -63,28 +63,28 @@ namespace ConsoleApp1
             }
 
             double average = (double)sum / scores.Length;
-            Console.WriteLine("¼ºÀû Æò±ÕÀº " + average + " ÀÔ´Ï´Ù.");
+            Console.WriteLine("ì„±ì  í‰ê· ì€ " + average + " ì…ë‹ˆë‹¤.");
 
             /*********************************************************************************/
-            Random random = new Random(); // ·£´ı °´Ã¼ »ı¼º
-            int[] numbers = new int[3]; // 3°³ÀÇ ·£´ıÇÒ ¼ıÀÚ¸¦ ÀúÀåÇÒ ¹è¿­
+            Random random = new Random(); // ëœë¤ ê°ì²´ ìƒì„±
+            int[] numbers = new int[3]; // 3ê°œì˜ ëœë¤í•  ìˆ«ìë¥¼ ì €ì¥í•  ë°°ì—´
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = random.Next(1, 10); // 1ÀÌ»ó 9ÀÌÇÏÀÇ ¼ıÀÚ
+                numbers[i] = random.Next(1, 10); // 1ì´ìƒ 9ì´í•˜ì˜ ìˆ«ì
             }
 
 
-            int attempt = 0;    //½Ãµµ È½¼ö
+            int attempt = 0;    //ì‹œë„ íšŸìˆ˜
 
             while (true)
             {
-                Console.WriteLine($"3°³ÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä (1~9): ");
+                Console.WriteLine($"3ê°œì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” (1~9): ");
                 int[] guess = new int[3];
 
                 for (int i = 0; i < guess.Length; i++)
                 {
-                    // 3°³ÀÇ ¼ıÀÚ¸¦ »ç¿ëÀÚ¿¡°Ô ÀÔ·Â¹Ş°í intÇüÀ¸·Î ÀüÈ¯
+                    // 3ê°œì˜ ìˆ«ìë¥¼ ì‚¬ìš©ìì—ê²Œ ì…ë ¥ë°›ê³  intí˜•ìœ¼ë¡œ ì „í™˜
                     guess[i] = int.Parse(Console.ReadLine());
                 }
 
@@ -103,11 +103,11 @@ namespace ConsoleApp1
                 }
 
                 attempt++;
-                Console.WriteLine($"½Ãµµ #" + attempt + " : " + correct + " °³ÀÇ ¼ıÀÚ¸¦ ¸ÂÃß¼Ì½À´Ï´Ù.");
+                Console.WriteLine($"ì‹œë„ #" + attempt + " : " + correct + " ê°œì˜ ìˆ«ìë¥¼ ë§ì¶”ì…¨ìŠµë‹ˆë‹¤.");
 
                 if (correct == 3)
                 {
-                    Console.WriteLine($"ÃàÇÏÇÕ´Ï´Ù! ¸ğµç ¼ıÀÚ¸¦ ¸ÂÃß¼Ì½À´Ï´Ù.");
+                    Console.WriteLine($"ì¶•í•˜í•©ë‹ˆë‹¤! ëª¨ë“  ìˆ«ìë¥¼ ë§ì¶”ì…¨ìŠµë‹ˆë‹¤.");
 
                     break;
                 }
@@ -129,12 +129,12 @@ namespace ConsoleApp1
                 {
                     if (map[i, j] == 1)
                     {
-                        Console.Write("¡á");
+                        Console.Write("â– ");
 
                     }
                     else
                     {
-                        Console.Write("¡à");
+                        Console.Write("â–¡");
 
                     }
                     Console.WriteLine($"");

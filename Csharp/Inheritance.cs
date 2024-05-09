@@ -42,7 +42,7 @@ namespace ConsoleApp7
         }
 
         // 부모클래스의 sleep 메서드가 숨김처리 하고 재정의함.  좋은 구현방식은 아님.
-        public void Sleep()
+        public void Sleep() // 경고표시가 뜨고있음
         {
             Console.WriteLine("jazz jazz sleep jazz");
         }
@@ -50,7 +50,7 @@ namespace ConsoleApp7
 
     public class Program
     {
-        public static void Main7(string[] args)
+        public static void Main(string[] args)
         {
             Dog Lofi = new Dog();
             Lofi.Name = "Lofi";
