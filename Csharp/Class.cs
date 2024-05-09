@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace ConsoleApp
+namespace ConsoleApp6
 {
     class Person
     {
@@ -44,7 +44,7 @@ namespace ConsoleApp
 
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main6(string[] args)
         {
             Person p = new Person();    // Person 클래스의 인스턴스 생성
             p.Name = "John";
