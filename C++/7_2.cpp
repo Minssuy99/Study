@@ -1,20 +1,21 @@
-/* °ª¿¡ ÀÇÇÑ ÀÎ¼ö Àü´Ş. Call by value */
+/* ê°’ì— ì˜í•œ ì¸ìˆ˜ ì „ë‹¬. Call by value */
+
 #include <iostream>
 
 using namespace std;
 
 void doSomething(int y)
 {
-    cout << "ÇÔ¼öÇÑÅÂ ºÒ·Á°¬À» ¶© " << y << " " << &y << endl;
+    cout << "in Func " << y << " " << &y << endl;
 }
 
 int main()
 {
     int x = 6;
 
-    cout << "¿ø·¡ ÁÖ¼Ò°ªÀº " << x << " " << &x << endl;
+    cout << "in main" << x << " " << &x << endl;
 
-    doSomething(x);
+    doSomething(x); // ê°’ì´ ë³µì‚¬ë˜ì–´ int y ì— ë“¤ì–´ê°. ì£¼ì†Œë‹¤ë¦„.
     doSomething(x + 1);
 
     return 0;
