@@ -11,7 +11,7 @@ namespace ConsoleAppInterface1
     {
         public void Move(int x, int y)
         {
-
+            // 기능구현
         }
     }
 
@@ -19,7 +19,7 @@ namespace ConsoleAppInterface1
     {
         public void Move(int x, int y)
         {
-
+            // 기능구현
         }
     }
 
