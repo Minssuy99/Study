@@ -39,28 +39,24 @@ int main()
 
     printArray(array, length);
 
-/* 내 답안
-    for (int i = 0; i < length-1; i ++)
-    {
-        for (int y = i + 1; y < length; y++)
-        {
-            if (array[i] > array[y])
-            {
-                int min_number = array[y];
-                array[y] = array[i];
-                array[i] = min_number;
-            }
-        }
-    }
-    printArray(array, length);
-*/
-
+    return 0;
 }
 
-
-// 선택정렬 스스로 구현해서 너무 기분좋다...
-
 /*
+내 답안     (선택정렬 스스로 구현해서 너무 기분좋다...)
+for (int i = 0; i < length-1; i ++)
+{
+    for (int y = i + 1; y < length; y++)
+    {
+        if (array[i] > array[y])
+        {
+            int min_number = array[y];
+            array[y] = array[i];
+            array[i] = min_number;
+         }
+    }
+}
+
 swap 구현하기
 
 int temp = array[0];
