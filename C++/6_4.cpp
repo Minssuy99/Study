@@ -16,6 +16,30 @@ int main()
     const int length = 5;
     int array[length] = { 3, 5, 2, 1, 4};
 
+    // 모범답안
+    for (int startIndex = 0; startIndex < length - 1; ++startIndex)
+    {
+        int smallestIndex = startIndex;
+
+        for (int currentIndex = startIndex + 1; currentIndex < length; currentIndex ++)
+        {
+            if (array[smallestIndex] > array[currentIndex])
+            {
+                smallestIndex = currentIndex;
+            }
+        }
+
+        // Swap
+        {
+        int temp = array[smallestIndex];
+        array[smallestIndex] = array[startIndex];
+        array[startIndex] = temp;
+        }
+    }
+
+    printArray(array, length);
+
+/* 내 답안
     for (int i = 0; i < length-1; i ++)
     {
         for (int y = i + 1; y < length; y++)
@@ -28,9 +52,19 @@ int main()
             }
         }
     }
-
     printArray(array, length);
+*/
+
 }
 
 
 // 선택정렬 스스로 구현해서 너무 기분좋다...
+
+/*
+swap 구현하기
+
+int temp = array[0];
+array [0] = array[1];
+array [1] = temp;
+
+*/
