@@ -35,15 +35,5 @@ void print(const string &name, const string &address, const int &age, const doub
 
 int main()
 {
-    Friend jj("JACK JACK", "UPTOWN", 7, 180, 80);
-
-    jj.print();
-
-    vector<Friend> my_friends;
-    my_friends.resize(2);
-
-    my_friends[0].print();
-    my_friends[1].print();
-
     return 0;
 }
