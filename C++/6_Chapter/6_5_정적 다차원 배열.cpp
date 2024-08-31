@@ -11,6 +11,7 @@ int main()
 
 
 
+
     cout << endl;
 
     int array[num_rows][num_columns] =  // row-major <-> column-major
